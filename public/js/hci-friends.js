@@ -3,18 +3,32 @@
 // Call this function when the page loads (the "ready" event)
 $(document).ready(function() {
 	initializePage();
+
 })
 
 /*
  * Function that is called when the document is ready.
  */
+
+/*  	$(".name").click(function(e) {
+console.log("entered into click function");
+	e.preventDefault();
+        	var currentName = $(this).text();
+		var newText = anagrammedName(currentName);
+		$(this).text(newText);
+	})
+*/
+
+
+
 function initializePage() {
 	console.log("Javascript connected!");
+
 }
 
 function anagrammedName(name) {
 	// Thanks, Internet Anagram Server!
-	
+console.log("name parameter>>>" + name + "<<<");	
 	if (name == "Doug Engelbart") {
 		return "Notable Grudge";
 	} 
@@ -44,3 +58,5 @@ function anagrammedName(name) {
 		return name;
 	}
 }
+
+
